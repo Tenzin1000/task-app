@@ -1,0 +1,30 @@
+.main-title {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+}
+.title-container {
+  background-color: #bcf6c2;
+  padding: 10px;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.barBtn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+}
+.barBtn i {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background: rgb(194, 193, 193);
+  cursor: pointer;
+}

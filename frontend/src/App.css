@@ -1,0 +1,69 @@
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.sidebar {
+  width: 13%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 99;
+  background-color: #bbdeab;
+  transition: all 0.5s linear;
+}
+.view {
+  width: 100%;
+  transition: all 0.5s linear;
+  background-color: #d9d9d9;
+}
+/* =======view and sidebar===== */
+.viewTab {
+  width: 100%;
+}
+.sidebarTab {
+  transition: all 0.5s linear;
+  width: 5%;
+}
+@media screen and (max-width: 866px) {
+  .sidebar {
+    width: 20% !important;
+  }
+  /* .view {
+    width: 80% !important;
+  } */
+  .viewTab {
+    width: 100% !important;
+  }
+  .sidebarTab {
+    width: 10% !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .view {
+    width: 100% !important;
+  }
+  .main-container {
+    position: relative;
+  }
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate(-200px, 0);
+  }
+  .sidebarTab {
+    width: 40% !important;
+    transform: translate(0, 0);
+  }
+  .viewTab {
+    width: 100% !important;
+  }
+  .sidebar {
+    width: 30%;
+  }
+}
